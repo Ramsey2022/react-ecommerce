@@ -1,5 +1,6 @@
 import React, { createContext, useState } from 'react'
 import { PRODUCTS } from '../products'
+import { Product } from '../pages/shop/product'
 
 export const ShopContext = createContext(null)
 
@@ -35,11 +36,23 @@ export const ShopContextProvider = (props) => {
     }))
   }
 
+  const getTotalCartAmount = () => {
+    let totalAmount = 0
+    for (const item in cartItems) {
+      if (cartItems[item] > 0) {
+        let itemInfo = PRODUCTS.find(product => product.id === Number(item))
+        totalAmount += cartItems[item] * itemInfo.price
+      }
+    }
+    return totalAmount
+  }
+
   const contextValue = {
     cartItems,
     addToCart,
     removeFromCart,
-    updateCartItemCount
+    updateCartItemCount,
+    getTotalCartAmount
   }
 
   console.log(cartItems)
