@@ -36,3 +36,43 @@ body {
   margin-left: 20px;
   font-size: 20px;
 }
+
+.shopTitle {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  height: 100px;
+  width: 300px;
+  margin: 100px;
+}
+
+.product img {
+  height: 250px;
+  width: 250px;
+  padding-top: 20px;
+}
+
+.product .description {
+  text-align: center;
+}
+
+.product:hover {
+  transition: 0.4s ease-in;
+  cursor: pointer;
+}
