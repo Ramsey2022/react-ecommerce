@@ -118,3 +118,25 @@ body {
   width: 100%;
   font-size: 30px;
 }
+
+.checkout button {
+  cursor: pointer;
+  border: 2px solid rgb(19, 19, 19);
+  outline: none;
+  padding: 5px;
+  border-radius: 16px;
+  background-color: transparent;
+}
+
+.checkout button:hover,
+.checkout button:focus {
+  cursor: pointer;
+  background-color: rgb(19, 19, 19, 0.75);
+  color: white;
+}
+
+.countHandler input {
+  width: 60px;
+  text-align: center;
+  font-weight: 600;
+}
