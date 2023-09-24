@@ -2,6 +2,10 @@ import React from 'react'
 
 export const Cart = () => {
   return (
-    <div>cart</div>
+    <div className='cart'>
+      <div>
+        <h1>Your Cart Items</h1>
+      </div>
+    </div>
   )
 }

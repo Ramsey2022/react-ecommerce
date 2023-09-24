@@ -60,11 +60,12 @@ body {
   height: 100px;
   width: 300px;
   margin: 100px;
+  padding-top: 20px;
 }
 
 .product img {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   padding-top: 20px;
 }
 
@@ -75,4 +76,19 @@ body {
 .product:hover {
   transition: 0.4s ease-in;
   cursor: pointer;
+}
+
+.addToCart {
+  border: 2px solid rgb(19, 19, 19);
+  outline: none;
+  padding: 5px;
+  border-radius: 16px;
+  background-color: transparent;
+}
+
+.addToCart:hover,
+.addToCart:focus {
+  cursor: pointer;
+  background-color: rgb(19, 19, 19, 0.75);
+  color: white;
 }
