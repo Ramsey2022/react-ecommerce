@@ -1,8 +1,12 @@
-# React + Vite
+# React E-commerce website
+<img src='React-shop.png' />
+<img src='react-shopping-cart.png' />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Features
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React Router to navigate between shop page and shopping cart
+- Populated shop page with json objects
+- Context for shopping cart logic 
+- CountHandler to increase or decrease number of items in cart
+- Subtotal of items are shown at checkout
+- Phosphor for icons
